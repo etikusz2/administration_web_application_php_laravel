@@ -1,0 +1,86 @@
+.time-slot {
+    height: 3rem;
+}
+
+.available {
+    background-color: #fff;
+}
+
+.available:hover {
+    border: 1px solid #00ff00;
+    cursor: pointer;
+}
+
+.available::after {
+    content: "Rezervă";
+    color: #0000ff;
+    position: center;
+    font-size: 16px;
+    display: none;
+}
+
+.available:hover::after {
+    display: block;
+}
+
+.unavailable {
+    background-color: none;
+}
+
+.reserved {
+    background-color: #ff0000;
+    pointer-events: none;
+}
+
+.unsetted {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.unsetted:hover::after {
+    content: "Setare";
+    color: #000;
+    position: center;
+}
+
+.setted {
+    background-color: #00ff00;
+    cursor: pointer;
+}
+
+.setted:hover {
+    border: 1px solid #00ff00;
+}
+
+.setted:hover::after {
+    content: "Anulare";
+    color: #000;
+    position: center;
+}
+
+.active-tab {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.btn-fab {
+    background-color: #007bff;
+    color: white;
+    width: 35px;
+    height: 35;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.btn-fab:hover {
+    background-color: #0056b3;
+}
+
+.material-icons {
+    font-size: 18px;
+}
